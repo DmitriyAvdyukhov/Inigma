@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Inigma256</class>
+ <widget class="QMainWindow" name="Inigma256">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>146</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inigma256</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="exit_button">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выход</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>441</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="create_kye_button">
+       <property name="text">
+        <string>Создать ключ</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/resource/img/img/docs.png</normaloff>:/resource/img/img/docs.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="encryption_button">
+       <property name="text">
+        <string>Зашифровать</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/resource/img/img/encryption.png</normaloff>:/resource/img/img/encryption.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="decryption_button">
+       <property name="text">
+        <string>Расшифровать</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/resource/img/img/decrypt.png</normaloff>:/resource/img/img/decrypt.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_create_key">
+    <property name="title">
+     <string>Создать ключ шифрования</string>
+    </property>
+    <addaction name="action_create_new_key"/>
+   </widget>
+   <widget class="QMenu" name="menu_incryption">
+    <property name="title">
+     <string>Зашифровать</string>
+    </property>
+    <addaction name="action_encryption_file"/>
+    <addaction name="action_encryption_message"/>
+   </widget>
+   <widget class="QMenu" name="menu_decryption">
+    <property name="title">
+     <string>Расшифровать</string>
+    </property>
+    <addaction name="action_decryption_file"/>
+    <addaction name="action_decryption_message"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu_create_key"/>
+   <addaction name="menu_incryption"/>
+   <addaction name="menu_decryption"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_create_new_key">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resource/img/img/file.png</normaloff>:/resource/img/img/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать новый ключ</string>
+   </property>
+  </action>
+  <action name="action_encryption_file">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resource/img/img/encryption.png</normaloff>:/resource/img/img/encryption.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зашифровать файл</string>
+   </property>
+  </action>
+  <action name="action_encryption_message">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resource/img/img/encryption.png</normaloff>:/resource/img/img/encryption.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зашифровать сообщение</string>
+   </property>
+  </action>
+  <action name="action_decryption_file">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resource/img/img/decrypt.png</normaloff>:/resource/img/img/decrypt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Расшифровать файл</string>
+   </property>
+  </action>
+  <action name="action_decryption_message">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resource/img/img/decrypt.png</normaloff>:/resource/img/img/decrypt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Расшифровать сообщение</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

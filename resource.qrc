@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/resource/img">
+        <file>img/add-file.png</file>
+        <file>img/Android.png</file>
+        <file>img/decrypt.png</file>
+        <file>img/docs.png</file>
+        <file>img/encrypted-data.png</file>
+        <file>img/encryption.png</file>
+        <file>img/file.png</file>
+        <file>img/floppy-disk.png</file>
+        <file>img/Linux.png</file>
+        <file>img/MacOSX.png</file>
+        <file>img/open_folder.png</file>
+        <file>img/show-password.png</file>
+        <file>img/Windows.png</file>
+    </qresource>
+</RCC>
